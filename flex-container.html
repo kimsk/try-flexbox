@@ -12,7 +12,8 @@
 
             .flex-container{
               display: inline-flex;
-              flex-direction: column;
+              flex-direction: row;
+              flex-wrap: wrap;
               border: solid 4px #000;
             }
 
@@ -21,6 +22,8 @@
               font-size: 1.2em;
               padding: 1em;
               text-align: center;
+              opacity: 0.8;
+              width: 5em;
             }
 
             .flex-item:first-child{
@@ -33,6 +36,18 @@
 
             .flex-item:nth-child(3){
               background-color: violet
+            }
+
+            .flex-item:nth-child(4){
+              background-color: red
+            }
+
+            .flex-item:nth-child(5){
+              background-color: green
+            }
+
+            .flex-item:nth-child(6){
+              background-color: blue
             }
 
     </style>
@@ -48,6 +63,15 @@
       </div>
       <div class="flex-item">
         Flex Item 03
+      </div>
+      <div class="flex-item">
+        Flex Item 04
+      </div>
+      <div class="flex-item">
+        Flex Item 05
+      </div>
+      <div class="flex-item">
+        Flex Item 06
       </div>
     </div>
 
