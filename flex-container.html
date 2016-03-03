@@ -12,12 +12,13 @@
 
             .flex-container{
               display: inline-flex;
-              flex-flow: column wrap;
-              /*flex-direction: row;
-              flex-wrap: wrap;*/
+              /*flex-flow: column wrap;*/
+              flex-direction: row;
+              flex-wrap: wrap;
               border: solid 4px #000;
-              width: 55%;
+              /*width: 55%;*/
               height: 20em;
+              flex-grow: 1;
             }
 
             .flex-item{
@@ -35,12 +36,13 @@
 
             .flex-item:nth-child(2){
               background-color: #9BC850;
-              order: -1;
+              /*order: -1;*/
             }
 
             .flex-item:nth-child(3){
               background-color: violet;
-              order: 1;
+              /*order: 1;*/
+              flex-grow: 4;
             }
 
             .flex-item:nth-child(4){
